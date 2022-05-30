@@ -7,7 +7,7 @@ const Stack = createNativeStackNavigator<RegisterStackParamList>();
 
 function RegisterStack() {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator screenOptions={{headerShown: false}}>
       <Stack.Screen name="Register" component={RegisterScreen} />
     </Stack.Navigator>
   );

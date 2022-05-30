@@ -1,12 +1,8 @@
-import {Text, View} from 'react-native';
 import React from 'react';
+import WelcomeTemplate from './WelcomTemplate';
 
 function WelcomeScreen() {
-  return (
-    <View>
-      <Text>WelcomeScreen</Text>
-    </View>
-  );
+  return <WelcomeTemplate />;
 }
 
 export default WelcomeScreen;

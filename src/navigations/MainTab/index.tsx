@@ -8,7 +8,7 @@ const Tab = createBottomTabNavigator<MainTabParamList>();
 
 function MainTab() {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator screenOptions={{headerShown: false}}>
       <Tab.Screen name="HomeStack" component={HomeStack} />
       <Tab.Screen name="Profile" component={ProfileScreen} />
     </Tab.Navigator>

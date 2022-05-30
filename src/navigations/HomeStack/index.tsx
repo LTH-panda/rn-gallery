@@ -9,7 +9,7 @@ const Stack = createNativeStackNavigator<HomeStackParamList>();
 
 function HomeStack() {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator screenOptions={{headerShown: false}}>
       <Stack.Screen name="Feed" component={FeedScreen} />
       <Stack.Screen name="Post" component={PostScreen} />
       <Stack.Screen name="Profile" component={ProfileScreen} />

@@ -31,5 +31,7 @@ module.exports = {
         tsx: 'never',
       },
     ],
+    'import/prefer-default-export': 'off',
+    'react/require-default-props': [0],
   },
 };
