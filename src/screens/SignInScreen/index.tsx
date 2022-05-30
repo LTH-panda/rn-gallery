@@ -1,12 +1,8 @@
-import {Text, View} from 'react-native';
 import React from 'react';
+import SignInTemplate from './SignInTemplate';
 
 function SignInScreen() {
-  return (
-    <View>
-      <Text>SignInScreen</Text>
-    </View>
-  );
+  return <SignInTemplate />;
 }
 
 export default SignInScreen;

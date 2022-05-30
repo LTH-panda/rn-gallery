@@ -1,6 +1,9 @@
 import {StyleSheet} from 'react-native';
 
 const styleUtils = StyleSheet.create({
+  bgWhite: {
+    backgroundColor: '#fff',
+  },
   fullScreen: {
     flex: 1,
   },
@@ -13,6 +16,15 @@ const styleUtils = StyleSheet.create({
   },
   text: {
     fontSize: 16,
+  },
+  ftWhite: {
+    color: '#fff',
+  },
+  mgBot: {
+    marginBottom: 32,
+  },
+  mgTop: {
+    marginTop: 32,
   },
 });
 

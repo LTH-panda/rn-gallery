@@ -1,21 +1,21 @@
 import React from 'react';
-import {BottomButton, Header, PaddingTeamplte} from 'components/Shared';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import styleUtils from 'styles/style-utils';
+import {BottomButton, Header, PaddingTeamplte} from 'components/Shared';
 import {AuthForm} from 'components/Auth';
 
-function RegisterTemplate() {
+function SignInTemplate() {
   return (
     <SafeAreaView
       style={[styleUtils.fullScreen, styleUtils.bgWhite]}
       edges={['top']}>
       <Header left="back" />
       <PaddingTeamplte>
-        <AuthForm register />
+        <AuthForm />
       </PaddingTeamplte>
-      <BottomButton text="회원가입" />
+      <BottomButton text="로그인" />
     </SafeAreaView>
   );
 }
 
-export default RegisterTemplate;
+export default SignInTemplate;

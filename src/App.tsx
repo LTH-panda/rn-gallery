@@ -1,15 +1,14 @@
 import {NavigationContainer} from '@react-navigation/native';
 import RootStack from 'navigations/RootStack';
 import React from 'react';
-import {SafeAreaView} from 'react-native';
-import styleUtils from 'styles/style-utils';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
 
 function App() {
   return (
     <NavigationContainer>
-      <SafeAreaView style={[styleUtils.fullScreen]}>
+      <SafeAreaProvider>
         <RootStack />
-      </SafeAreaView>
+      </SafeAreaProvider>
     </NavigationContainer>
   );
 }
