@@ -4,7 +4,6 @@ export type RootStackParamList = {
   SignInStack: undefined;
   RegisterStack: undefined;
   MainTab: undefined;
-  Write: undefined;
   Setting: undefined;
   Welcome: undefined;
 };

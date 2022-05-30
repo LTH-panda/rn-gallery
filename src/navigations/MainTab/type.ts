@@ -3,6 +3,7 @@ import {HomeStackNavigationScreenParams} from 'navigations/HomeStack/type';
 
 export type MainTabParamList = {
   HomeStack: HomeStackNavigationScreenParams;
+  Write: undefined;
   Profile: undefined;
 };
 
