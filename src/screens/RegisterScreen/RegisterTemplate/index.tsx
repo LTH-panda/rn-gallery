@@ -1,5 +1,5 @@
 import React from 'react';
-import {BottomButton, Header, PaddingTeamplte} from 'components/Shared';
+import {BottomButton, ActionHeader, PaddingTeamplte} from 'components/Shared';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import styleUtils from 'styles/style-utils';
 import {AuthForm} from 'components/Auth';
@@ -9,7 +9,7 @@ function RegisterTemplate() {
     <SafeAreaView
       style={[styleUtils.fullScreen, styleUtils.bgWhite]}
       edges={['top']}>
-      <Header left="back" />
+      <ActionHeader left="back" />
       <PaddingTeamplte>
         <AuthForm register />
       </PaddingTeamplte>

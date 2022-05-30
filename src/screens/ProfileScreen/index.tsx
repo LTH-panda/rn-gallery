@@ -1,12 +1,8 @@
-import {Text, View} from 'react-native';
 import React from 'react';
+import ProfileTemplate from './ProfileTemplate';
 
 function ProfileScreen() {
-  return (
-    <View>
-      <Text>ProfileScreen</Text>
-    </View>
-  );
+  return <ProfileTemplate />;
 }
 
 export default ProfileScreen;

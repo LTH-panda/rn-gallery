@@ -1,5 +1,6 @@
-export {default as Header} from './Header';
+export {default as ActionHeader} from './ActionHeader';
 export {default as PaddingTeamplte} from './PaddingTemplate';
 export {default as Button} from './Button';
 export {default as BottomButton} from './BottomButton';
 export {default as StyledInput} from './StyledInput';
+export {default as Header} from './Header';

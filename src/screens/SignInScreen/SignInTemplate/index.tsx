@@ -1,7 +1,7 @@
 import React from 'react';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import styleUtils from 'styles/style-utils';
-import {BottomButton, Header, PaddingTeamplte} from 'components/Shared';
+import {BottomButton, ActionHeader, PaddingTeamplte} from 'components/Shared';
 import {AuthForm} from 'components/Auth';
 
 function SignInTemplate() {
@@ -9,7 +9,7 @@ function SignInTemplate() {
     <SafeAreaView
       style={[styleUtils.fullScreen, styleUtils.bgWhite]}
       edges={['top']}>
-      <Header left="back" />
+      <ActionHeader left="back" />
       <PaddingTeamplte>
         <AuthForm />
       </PaddingTeamplte>
