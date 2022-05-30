@@ -10,3 +10,8 @@ export const DescText = styled.Text`
 `;
 
 export const ActionsBlock = styled.View``;
+
+export const SurfingButton = styled.View`
+  justify-content: center;
+  align-items: center;
+`;

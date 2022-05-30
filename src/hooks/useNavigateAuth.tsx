@@ -13,6 +13,7 @@ export default function useNavigateAuth() {
     () => navigation.navigate('SignInStack'),
     [],
   );
+  const navigateMainTab = useCallback(() => navigation.navigate('MainTab'), []);
 
-  return {navigateRegister, navigateSignIn};
+  return {navigateRegister, navigateSignIn, navigateMainTab};
 }
