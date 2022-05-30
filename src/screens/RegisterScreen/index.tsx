@@ -1,12 +1,8 @@
-import {Text, View} from 'react-native';
 import React from 'react';
+import RegisterTemplate from './RegisterTemplate';
 
 function RegisterScreen() {
-  return (
-    <View>
-      <Text>RegisterScreen</Text>
-    </View>
-  );
+  return <RegisterTemplate />;
 }
 
 export default RegisterScreen;

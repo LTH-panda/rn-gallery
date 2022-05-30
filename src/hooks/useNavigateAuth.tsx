@@ -2,7 +2,7 @@ import {useNavigation} from '@react-navigation/native';
 import {RootStackNavigationProp} from 'navigations/RootStack/type';
 import {useCallback} from 'react';
 
-const useNavigateAuth = () => {
+export default function useNavigateAuth() {
   const navigation = useNavigation<RootStackNavigationProp>();
 
   const navigateRegister = useCallback(
@@ -15,6 +15,4 @@ const useNavigateAuth = () => {
   );
 
   return {navigateRegister, navigateSignIn};
-};
-
-export default useNavigateAuth;
+}
