@@ -1,12 +1,8 @@
-import {Text, View} from 'react-native';
 import React from 'react';
+import FeedTemplate from './FeedTemplate';
 
 function FeedScreen() {
-  return (
-    <View>
-      <Text>FeedScreen</Text>
-    </View>
-  );
+  return <FeedTemplate />;
 }
 
 export default FeedScreen;
