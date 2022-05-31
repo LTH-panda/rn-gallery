@@ -1,12 +1,8 @@
-import {Text, View} from 'react-native';
 import React from 'react';
+import SettingTemplate from './SettingTemplate';
 
 function SettingScreen() {
-  return (
-    <View>
-      <Text>SettingScreen</Text>
-    </View>
-  );
+  return <SettingTemplate />;
 }
 
 export default SettingScreen;
