@@ -1,7 +1,9 @@
-import styled, {css} from 'styled-components/native';
+import styled from 'styled-components/native';
 
 type ButtonBlockProps = {
   primary?: boolean;
+  bgWhite?: boolean;
+  border?: boolean;
   full?: boolean;
   mgBot?: boolean;
   pressed: boolean;
@@ -10,29 +12,14 @@ type ButtonBlockProps = {
 export const ButtonBlock = styled.View<ButtonBlockProps>`
   justify-content: center;
   align-items: center;
-  ${({full}) =>
-    !full
-      ? css`
-          align-self: flex-start;
-        `
-      : ''}
+  align-self: ${props => (props.full ? 'auto' : 'flex-start')};
+  opacity: ${({pressed}) => (pressed ? 0.55 : 1)};
+  border-width: ${props => (props.border ? 1 : 0)};
   border-radius: 16px;
   padding: 8px;
   padding-top: 16px;
   padding-bottom: 16px;
-  ${({mgBot}) =>
-    mgBot &&
-    css`
-      margin-bottom: 16px;
-    `}
-  opacity: ${({pressed}) => (pressed ? 0.55 : 1)};
-
-  ${({primary}) =>
-    primary
-      ? css`
-          background: #5c7cfa;
-        `
-      : css`
-          border: 1px solid #000;
-        `}
+  margin-bottom: ${props => (props.mgBot ? '16px' : 0)};
+  background-color: ${props => props.primary && '#5c7cfa'};
+  background-color: ${props => props.bgWhite && '#fff'};
 `;

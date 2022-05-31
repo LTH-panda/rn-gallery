@@ -14,7 +14,7 @@ function WelcomeTemplate() {
       </DescBlock>
       <ActionsBlock>
         <Button onPress={navigateRegister} text="회원가입" primary full mgBot />
-        <Button onPress={navigateSignIn} text="로그인" full mgBot />
+        <Button onPress={navigateSignIn} text="로그인" full mgBot border />
         <Pressable onPress={navigateMainTab}>
           <SurfingButton>
             <Text>둘러보기</Text>

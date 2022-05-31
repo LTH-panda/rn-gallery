@@ -1,12 +1,8 @@
-import {Text, View} from 'react-native';
 import React from 'react';
+import PostTemplate from './PostTemplate';
 
 function PostScreen() {
-  return (
-    <View>
-      <Text>PostScreen</Text>
-    </View>
-  );
+  return <PostTemplate />;
 }
 
 export default PostScreen;

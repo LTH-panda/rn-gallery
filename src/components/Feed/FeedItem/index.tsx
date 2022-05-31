@@ -1,6 +1,8 @@
 import React from 'react';
 import styleUtils from 'styles/style-utils';
 import {User} from 'api/user-api/type';
+import {Pressable} from 'react-native';
+import useNavigateFeed from 'hooks/useNavigateFeed';
 import {FeedItemBlock} from './style';
 import FeedHeader from '../FeedHeader';
 import FeedImage from '../FeedImage';
@@ -14,11 +16,15 @@ type FeedItemProps = {
 };
 
 function FeedItem({id, user, image, desc}: FeedItemProps) {
+  const {navigatePost} = useNavigateFeed();
+
   return (
     <FeedItemBlock style={[styleUtils.boxShadow]}>
       <FeedHeader user={user} id={id} />
-      <FeedImage image={image} />
-      <FeedSummary desc={desc} />
+      <Pressable onPress={navigatePost}>
+        <FeedImage image={image} />
+        <FeedSummary desc={desc} />
+      </Pressable>
     </FeedItemBlock>
   );
 }
