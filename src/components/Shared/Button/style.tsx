@@ -1,8 +1,6 @@
 import styled from 'styled-components/native';
 
 type ButtonBlockProps = {
-  primary?: boolean;
-  bgWhite?: boolean;
   border?: boolean;
   full?: boolean;
   mgBot?: boolean;
@@ -19,7 +17,5 @@ export const ButtonBlock = styled.View<ButtonBlockProps>`
   padding: 8px;
   padding-top: 16px;
   padding-bottom: 16px;
-  margin-bottom: ${props => (props.mgBot ? '16px' : 0)};
-  background-color: ${props => props.primary && '#5c7cfa'};
-  background-color: ${props => props.bgWhite && '#fff'};
+  margin-bottom: ${props => (props.mgBot ? '20px' : null)};
 `;

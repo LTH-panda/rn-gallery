@@ -21,10 +21,10 @@ const styleUtils = StyleSheet.create({
     color: '#fff',
   },
   mgBot: {
-    marginBottom: 32,
+    marginBottom: 40,
   },
   mgTop: {
-    marginTop: 32,
+    marginTop: 40,
   },
   boxShadow: {
     shadowColor: '#000',

@@ -26,11 +26,13 @@ function Button({
       {({pressed}) => (
         <ButtonBlock
           pressed={pressed}
-          primary={primary}
-          bgWhite={bgWhite}
           border={border}
           full={full}
-          mgBot={mgBot}>
+          mgBot={mgBot}
+          style={[
+            primary && {backgroundColor: '#5c7cfa'},
+            bgWhite && {backgroundColor: '#fff'},
+          ]}>
           <Text style={primary && {color: '#fff'}}>{text}</Text>
         </ButtonBlock>
       )}
